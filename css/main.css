@@ -7,3 +7,12 @@ table {
     border:1px solid rgb(0, 0, 0);
     padding:8px;
     }
+
+    aside{
+        width: 30%;
+        padding-left: 15px;
+        margin-left: 60px;
+        float: left;
+        font-style: italic;
+        background-color: lightgrey;
+    }
