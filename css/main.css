@@ -1,0 +1,33 @@
+
+
+table {
+    border-collapse:collapse
+    }
+    td, th {
+    border:1px solid rgb(0, 0, 0);
+    padding:8px;
+    }
+
+aside{
+    width: 30%;
+    padding-left: 15px;
+    margin-left: 60px;
+    float: left;
+    font-style: italic;
+    background-color: lightgrey;
+}
+
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: slategray;
+    color: white;
+    text-align: center;
+ }
+
+ .col-4{
+    margin-top: 50px;
+    margin-bottom: 50px;
+ }
