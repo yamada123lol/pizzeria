@@ -26,3 +26,8 @@ aside{
     color: white;
     text-align: center;
  }
+
+ .col-4{
+    margin-top: 50px;
+    margin-bottom: 50px;
+ }

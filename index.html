@@ -32,9 +32,9 @@
               <a class="nav-link" href="#chi_siamo">Chi Siamo</a>
               <a class="nav-link" href="#orari">Orari</a>
               <a class="nav-link" href="#menu">Menu</a>
-              <a class="nav-link" href="#">Prenotazioni</a>
-              <a class="nav-link" href="#">Location</a>
-              <a class="nav-link" href="#">Contatti</a>
+              <a class="nav-link" href="#prenotazioni">Prenotazioni</a>
+              <a class="nav-link" href="#location">Location</a>
+              <a class="nav-link" href="#contatti">Contatti</a>
             </div>
           </span>
         </div>
@@ -398,7 +398,7 @@
                         <td style="font-style: italic; border-color: transparent;"><b>Fanta</b></td>
                         <td style="border-color: transparent;">
                         <table>
-                        <tr>2.90</tr>
+                        <tr>2.90€</tr>
                         </table>
                         </td>
                         </tbody>
@@ -418,7 +418,7 @@
                         <td style="font-style: italic; border-color: transparent;"><b>Lemonsoda</b></td>
                         <td style="border-color: transparent;">
                         <table>
-                        <tr>2.90</tr>
+                        <tr>2.90€</tr>
                         </table>
                         </td>
                         </tbody>
@@ -438,7 +438,7 @@
                         <td style="font-style: italic; border-color: transparent;"><b>Sprite</b></td>
                         <td style="border-color: transparent;">
                         <table>
-                        <tr>2.90</tr>
+                        <tr>2.90€</tr>
                         </table>
                         </td>
                         </tbody>
@@ -448,7 +448,7 @@
                         <td style="font-style: italic; border-color: transparent;"><b>Succhi di frutta</b></td>
                         <td style="border-color: transparent;">
                         <table>
-                        <tr>2.90€</tr>
+                        <tr>2.00€</tr>
                         </table>
                         </td>
                         </tbody>
@@ -458,7 +458,7 @@
                         <td style="font-style: italic; border-color: transparent;"><b>Acqua Naturale/Frizzante</b></td>
                         <td style="border-color: transparent;">
                         <table>
-                        <tr>2.90</tr>
+                        <tr>1.00€</tr>
                         </table>
                         </td>
                         </tbody>
@@ -470,7 +470,7 @@
                         <td style="font-style: italic; border-color: transparent;"><b>Vino Rosso/Bianco</b></td>
                         <td style="border-color: transparent;">
                         <table>
-                        <tr>2.90€</tr>
+                        <tr>4.00€</tr>
                         </table>
                         </td>
                         </tbody>
@@ -480,7 +480,7 @@
                         <td style="font-style: italic; border-color: transparent;"><b>Prosecco</b></td>
                         <td style="border-color: transparent;">
                         <table>
-                        <tr>2.90</tr>
+                        <tr>3.10€</tr>
                         </table>
                         </td>
                         </tbody>
@@ -490,7 +490,7 @@
                         <td style="font-style: italic; border-color: transparent;"><b>Ceres</b></td>
                         <td style="border-color: transparent;">
                         <table>
-                        <tr>2.90€</tr>
+                        <tr>2.50€</tr>
                         </table>
                         </td>
                         </tbody>
@@ -500,7 +500,7 @@
                         <td style="font-style: italic; border-color: transparent;"><b>Analcolica</b></td>
                         <td style="border-color: transparent;">
                         <table>
-                        <tr>2.90</tr>
+                        <tr>2.00€</tr>
                         </table>
                         </td>
                         </tbody>
@@ -516,11 +516,11 @@
                         </tbody>
                         </table>
 
-                        <table style="margin-bottom: 25px;">
+                        <table>
                         <td style="font-style: italic; border-color: transparent;"><b>Grappa Aromatizzata mirtillo, mugo, ginepro</b></td>
                         <td style="border-color: transparent;">
                         <table>
-                        <tr>2.90</tr>
+                        <tr>3.00€</tr>
                         </table>
                         </td>
                         </tbody>
@@ -532,63 +532,106 @@
 
 
     <!-- prenotazioni -->
-    <div class="container-fluid" id="preonotazioni" style="height: 500px;">
+    <div class="container-fluid" id="preonotazioni" style="height: 820px; background-color:rgb(129, 126, 126) ; padding-top: 10px;">
         <div style="border: lightcoral solid 2px; margin-left: 844px; width: 200px; margin-top: 30px;"></div>
         <div style="border: lightcoral solid 2px; margin-left: 894px; width: 101px; margin-top: 30px;"></div>
         <h2 style="padding-left: 850px; padding-top: 10px;">Prenotazioni</h2>
 
-        <div style="width: 250px; margin-left: 820px; border: gold solid 2px;"></div>
-
-        <form>
-            <div class="row mb-3" style="margin-left: 820px; margin-top: 28px;">
-              <h6 for="numero">Numero Telefonico</h6>
-              <div class="col-sm-3">
-                <input type="tetx" class="form-control" id="Numero">
-              </div>
-            </div>
 
 
-            <div>
-                <div style="position:relative; margin:auto; width:200px">
-                    <h6 for="myrange">numero persone</h6>
-                    <span style="position:absolute; color:rgb(0, 0, 0); min-width:10px; margin-top: 26px;">
-                    <span id="myValue"></span>
-                    </span>
-                    <input type="range" id="myRange" max="6" min="1" style="width:80%">
-                  </div>
 
-                  <script type="text/javascript" charset="utf-8">
-                    var myRange = document.querySelector('#myRange');
-                    var myValue = document.querySelector('#myValue');
-
-                    var off = myRange.offsetWidth / (parseInt(myRange.max) - parseInt(myRange.min));
-                    var px =  ((myRange.valueAsNumber - parseInt(myRange.min)) * off) - (myValue.offsetParent.offsetWidth / 2);
-
-                    myValue.parentElement.style.left = px + 'px';
-                    myValue.parentElement.style.top = myRange.offsetHeight + 'px';
-                    myValue.innerHTML = myRange.value;
-
-                    myRange.oninput =function(){
-                        let px = ((myRange.valueAsNumber - parseInt(myRange.min)) * off) - (myValue.offsetWidth / 2);
-                        myValue.innerHTML = myRange.value;
+        <div class="container" style="width: 800px;">
+            <form class="row g-3">
+                <div class="col-md-6">
+                <label for="nomeEcognome" class="form-label">Nome e Cognome</label>
+                <input type="text" class="form-control" id="nomeEcognome" required>
+                </div>
+                <div class="col-md-6">
+                <label for="giorno" class="form-label">Giorno</label>
+                <input type="text" class="form-control" id="giorno" required>
+                </div>
+                <div class="col-12">
+                <label for="inputEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="@gmail.com" required>
+                </div>
+                <div class="col-12">
+                <label for="inputOrari" class="form-label">Orario</label>
+                <input type="text" class="form-control" id="Orario" placeholder="00:00" required>
+                </div>
+    
+                <div class="col-md-12">
+                <label for="inputState" class="form-label">Occasione</label>
+                <select id="inputState" class="form-select">
+                    <option selected>---</option>
+                    <option>Compleanno</option>
+                    <option>Anniversario</option>
+                    <option>Festività</option>
+                    <option>Matrimonio</option>
+                    <option>Altro</option>
+                </select>
+                </div>
+                <div>
+                    <div style="position:relative; width: 100%">
+                        <p for="myrange" class="form-label">Numero Persone</p>
+                        <span style="position:absolute; color:rgb(0, 0, 0); min-width:10px; margin-top: 30px;">
+                        <span id="myValue"></span>
+                        </span>
+                        <input class="form-label" type="range" id="myRange" max="20" min="1" style="width:80%">
+                      </div>
+    
+                      <script type="text/javascript" charset="utf-8">
+                        var myRange = document.querySelector('#myRange');
+                        var myValue = document.querySelector('#myValue');
+    
+                        var off = myRange.offsetWidth / (parseInt(myRange.max) - parseInt(myRange.min));
+                        var px =  ((myRange.valueAsNumber - parseInt(myRange.min)) * off) - (myValue.offsetParent.offsetWidth / 2);
+    
                         myValue.parentElement.style.left = px + 'px';
-                    };
-                  </script>
-            </div>
-
-
-            <input style="margin-left: 830px; margin-top: 20px; background-color: slategrey; border: slategrey; color: white; border-radius: 10px;" type="submit">
-
-        </form>
+                        myValue.parentElement.style.top = myRange.offsetHeight + 'px';
+                        myValue.innerHTML = myRange.value;
+    
+                        myRange.oninput =function(){
+                            let px = ((myRange.valueAsNumber - parseInt(myRange.min)) * off) - (myValue.offsetWidth / 2);
+                            myValue.innerHTML = myRange.value;
+                            myValue.parentElement.style.left = px + 'px';
+                        };
+                      </script>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Example textarea</label>
+                    <textarea  rows="4" cols="50" class="form-control" aria-invalid="false" style="overflow:auto;resize:none"></textarea>
+                </div>
+                <div class="col-12">
+                <button type="submit" class="btn btn-primary">Invia</button>
+                </div>
+            </form>
+        </div>
     </div>
 
 
     <!-- location -->
-    <div class="container-fluid" id="location">
-
+    <div class="container-fluid" id="location" style="background-image: url('img/location.jpg') ; background-repeat: no-repeat;">
+        <div class="row">
+            <div class="col-7">
+                <h2 style="text-align: center; margin-top: 10px; margin-bottom: 10px; margin-top: 98px;">Location</h2>
+                <h6 style="text-align: center; margin-top: 20px;">viale : via Peperoni, 4</h6>
+                <h6 style="text-align: center; margin-top: 5px;">Città : San Donà</h6>                
+                <h6 style="text-align: center; margin-top: 5px;">Provincia : VE</h6>               
+            </div>
+            <div class="col-4" style="background-color: rgb(33,34,44) ;">
+                <div>
+                    <div style="border: red solid 1px; margin-left: 282px; width: 50px; margin-top: 30px;"></div>        
+                    <div style="border: red solid 1px; margin-left: 282px; width: 50px; margin-top: 3px;"></div>   
+                    <h2 style="text-align: center; margin-top: 10px; margin-bottom: 10px; margin-top: 10px; color: white;">Contatti</h2>
+                    <div style="border: red solid 1px; margin-left: 282px; width: 50px; margin-bottom: 3px;"></div>        
+                    <div style="border: red solid 1px; margin-left: 282px; width: 50px; margin-bottom: 30px;"></div>                   
+                </div>
+                <p style="color: white; text-align: center;">Pizzeria Zio Rinaldo</p>
+                <p style="color: white; text-align: center;">Telefono: 39+ 3216135639</p>
+                <p style="color: white; text-align: center;">Email: pizeria@ziorinaldo.it</p>
+            </div>
+        </div>
     </div>
-
-
 
     <!-- footer -->
 
